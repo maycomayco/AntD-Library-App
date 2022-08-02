@@ -8,6 +8,7 @@ const { Header, Footer, Content } = Layout;
 const { Title } = Typography;
 
 export default function App() {
+  // add useReducer in hook for handle distinct behaviours
   const [loading, users, loadUsers, setUsers] = useUsers();
 
   const onClickGetData = () => loadUsers();
